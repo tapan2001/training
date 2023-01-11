@@ -1,0 +1,51 @@
+body {
+  background-color: rgb(237, 221, 200);
+  padding: 0 15px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+  background-color: darkred;
+  color: white;
+  text-align: center;
+  margin-bottom: 0;
+  font-style: italic;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 15px;
+}
+hr {
+  border: 0;
+  margin: 0;
+  height: 20px;
+  background-color: rgb(193, 0, 0);
+}
+h2 {
+  background-color: rgb(3, 173, 3);
+  color: white;
+  padding-left: 15px;
+}
+ul {
+  color: darkred;
+}
+
+h3 {
+  color: rgb(101, 101, 101);
+}
+table,
+td {
+  background-color: rgb(180, 180, 180);
+  border: solid 1px;
+}
+textarea {
+  height: 150px;
+  overflow-y: scroll;
+}
+label,
+input,
+textarea {
+  margin: 10px 0;
+}
+
+img {
+  width: 250px;
+}

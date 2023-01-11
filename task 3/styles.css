@@ -1,0 +1,44 @@
+.wrapper > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  text-align: center;
+  width: 600px;
+  margin: auto;
+  color: white;
+  gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "sd sd c1 c1 c1 c1 c1 c1"
+    "sd sd c2 c2 c2 c3 c3 c3"
+    "ft ft ft ft ft ft ft ft";
+}
+.header {
+  grid-area: hd;
+  background: linear-gradient(to right, #7b41ee, #b98af5);
+}
+.sidebar {
+  grid-area: sd;
+  background-color: rgb(24, 210, 210);
+}
+.content1 {
+  grid-area: c1;
+  background: linear-gradient(to right, #4441ee, #6b69ec);
+}
+.content2 {
+  grid-area: c2;
+  background: linear-gradient(to right, #4441ee, #6b69ec);
+}
+.content3 {
+  grid-area: c3;
+  background: linear-gradient(to right, #4441ee, #6b69ec);
+}
+.footer {
+  background: linear-gradient(to right, #7b41ee, #b98af5);
+  grid-area: ft;
+}

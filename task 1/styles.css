@@ -1,0 +1,54 @@
+.main-container {
+  width: max-content;
+  margin: auto;
+}
+.card {
+  width: 449px;
+  height: 130px;
+  margin: 4px;
+  display: flex;
+}
+.profile {
+  height: 130px;
+  width: 130px;
+}
+.text {
+  margin: auto auto auto 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+#username {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  margin: auto 0 14px 0;
+}
+#tweet {
+  font-size: 20px;
+  font-weight: normal;
+  color: #000000;
+  margin: auto 0 24px 0;
+}
+
+.icons {
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  color: #858991;
+}
+
+.icons div img {
+  width: 20px;
+  height: 20px;
+}
+
+#reply-icon,
+#retweet-icon,
+#like-icon {
+  margin-right: 14px;
+}
+#reply-text,
+#retweet-text,
+#like-text {
+  margin-right: 24px;
+}

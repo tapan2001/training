@@ -1,0 +1,35 @@
+@font-face {
+  font-family: Quicksand;
+  src: url("Quicksand font 1/Quicksand-VariableFont_wght.ttf");
+}
+* {
+  margin: 0;
+  font-family: Quicksand;
+  background-color: #eeeeee;
+}
+
+/* Header */
+.header {
+  background-image: url("header pattern svg.svg");
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+.header * {
+  margin-right: 32px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.header img:nth-of-type(1) {
+  margin: 10.5px auto 9.5px 24px;
+}
+.header img:nth-of-type(4) {
+  margin-right: 24px;
+}
+.header a {
+  font-size: 14px;
+  text-decoration-line: none;
+  color: #3fd28b;
+  font-weight: bold;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Quantum Login</title>
+  </head>
+  <body>
+    <div class="header">
+      <img src="icons/logo used in header.svg" alt="logo header" />
+    </div>
+    <div class="main">
+      <div class="title">
+        <img src="icons/back.svg" alt="back button" />
+        <div>Log in with Quantum</div>
+      </div>
+      <form action="#">
+        <div class="category">
+          <input type="radio" id="dist" value="dist" />
+          <!-- <svg
+            id="radio-button-off"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              id="Path_1827"
+              data-name="Path 1827"
+              d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z"
+              fill="#1f7a54"
+            />
+            <path
+              id="Path_1828"
+              data-name="Path 1828"
+              d="M0,0H24V24H0Z"
+              fill="none"
+            />
+          </svg> -->
+
+          <label for="dist">District</label>
+          <input type="radio" id="school" value="school" />
+          <!-- <svg
+            id="radio-button-off"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              id="Path_1827"
+              data-name="Path 1827"
+              d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z"
+              fill="#1f7a54"
+            />
+            <path
+              id="Path_1828"
+              data-name="Path 1828"
+              d="M0,0H24V24H0Z"
+              fill="none"
+            />
+          </svg> -->
+          <label for="school">Independent School</label>
+        </div>
+        <div class="dropdown">
+          <label for="state">State*</label>
+          <select name="state" id="state">
+            <option value="alabama">Alabama</option>
+            <option value="california">California</option>
+            <option value="texas">Texas</option>
+            <option value="florida">Florida</option>
+          </select>
+        </div>
+        <div class="dropdown">
+          <label for="district">District*</label>
+          <select name="district" id="district">
+            <option value="alabama school district">
+              Alabama School District
+            </option>
+            <option value="california school district">
+              California School District
+            </option>
+            <option value="texas school district">Texas School District</option>
+            <option value="florida school district">
+              Florida School District
+            </option>
+          </select>
+        </div>
+        <div class="credentials">
+          <input type="text" placeholder="Username/Email ID*" />
+          <a href="#">FORGOT USERNAME?</a>
+        </div>
+        <div class="credentials">
+          <input type="password" placeholder="Password*" />
+          <a href="#">FORGOT PASSWORD?</a>
+        </div>
+        <div class="rem">
+          <input type="checkbox" value="remember" id="remember" />
+          <label for="remember">Remember Me</label>
+        </div>
+        <div class="btn">
+          <button type="submit">LOG IN</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="footer">
+      <div>
+        <a href="#">About</a>
+        <span>|</span>
+        <a href="#">Contact Us</a>
+      </div>
+      <div>
+        <img src="icons/logo used in footer.svg" alt="logo footer" />
+        <span>|</span>
+        <span>Copyright &copy; 2020-2021</span>
+        <span>Zeus Systems Pvt. Ltd.</span>
+        <span>All rights reserved</span>
+      </div>
+    </div>
+  </body>
+</html>
