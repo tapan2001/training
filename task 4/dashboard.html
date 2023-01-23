@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quantum Dashboard</title>
-    <link rel="stylesheet" href="dashboard-sass.css" />
+    <link rel="stylesheet" href="dashboard.css" />
   </head>
   <body>
     <div class="header">
-      <img src="icons/logo used in header.svg" alt="logo header" />
+      <img
+        id="logo-header"
+        src="icons/logo used in header.svg"
+        alt="logo header"
+      />
       <a href="#">DASHBOARD</a>
       <a href="#">CONTENT</a>
       <a href="#">USERS</a>
@@ -17,25 +21,26 @@
       <a href="#">ADMIN</a>
       <img src="icons/alerts.svg" alt="alerts logo" />
       <img src="icons/announcements.svg" alt="announcements logo" />
-      <img src="icons/account_circle.svg" alt="account logo" />
-      <img src="icons/hamburger-menu.svg" alt="" />
+      <img id="acc-circle" src="icons/account_circle.svg" alt="account logo" />
+      <img id="hamburger-menu" src="icons/hamburger-menu.svg" alt="" />
     </div>
     <div class="bar">
-      <div>
-        <div>
-          <img src="icons/courses.svg" alt="courses icon" />
-          <span>4 </span>
-          <span> Courses </span>
+      <div class="bar-box">
+        <div class="bar-section">
+          <img id="course-icon" src="icons/courses.svg" alt="courses icon" />
+          <span class="bar-txt">4 </span>
+          <span class="bar-txt"> Courses </span>
         </div>
       </div>
-      <div>
-        <div>
-          <img src="icons/classes.svg" alt="classes icon" />
-          <span>4 </span>
-          <span>Classes</span>
+      <div class="bar-box">
+        <div class="bar-section">
+          <img id="class-icon" src="icons/classes.svg" alt="classes icon" />
+          <span class="bar-txt">4 </span>
+          <span class="bar-txt">Classes</span>
         </div>
       </div>
     </div>
+
     <div class="info-bar">
       <span>Showing 4 of 4 courses</span>
       <label for="sort"> Sort By: </label>
@@ -51,17 +56,17 @@
       <div class="card">
         <div class="box1"><img src="images/imageMask-1.svg" alt="" /></div>
         <div class="box2">
-          <div>
+          <div class="box2-title">
             <h2>Acceleration</h2>
-            <img src="icons/favourite.svg" alt="" />
+            <img id="icon-favourite" src="icons/favourite.svg" alt="" />
           </div>
-          <div>
+          <div class="box2-subject">
             <span>Physics</span>
             <span>|</span>
             <span>Grade 7</span>
             <span>+2</span>
           </div>
-          <div>
+          <div class="box2-detail">
             <span>4</span>
             <span>Units</span>
             <span>18</span>
@@ -69,14 +74,14 @@
             <span>24</span>
             <span>Topics</span>
           </div>
-          <div>
+          <div class="box2-teacher">
             <select name="class" id="class">
               <option value="frank class b">Mr. Frank's Class B</option>
               <option value="frank class c">Mr. Frank's Class C</option>
               <option value="anderson class c">Mr. Anderson's Class C</option>
             </select>
           </div>
-          <div>
+          <div class="box2-student">
             <span>50 Students</span>
             <span>21-Jan-2020 - 21-Aug-2020</span>
           </div>
@@ -93,17 +98,17 @@
       <div class="card">
         <div class="box1"><img src="images/imageMask-2.svg" alt="" /></div>
         <div class="box2">
-          <div>
+          <div class="box2-title">
             <h2>Displacement, Velocity and Speed</h2>
-            <img src="icons/favourite.svg" alt="" />
+            <img id="icon-favourite" src="icons/favourite.svg" alt="" />
           </div>
-          <div>
+          <div class="box2-subject">
             <span>Physics 2</span>
             <span>|</span>
             <span>Grade 6</span>
             <span>+3</span>
           </div>
-          <div>
+          <div class="box2-detail">
             <span>2</span>
             <span>Units</span>
             <span>15</span>
@@ -111,7 +116,7 @@
             <span>20</span>
             <span>Topics</span>
           </div>
-          <div>
+          <div class="box2-teacher">
             <select name="class" id="class" disabled>
               <option value="no classes" selected>No classes</option>
               <option value="frank class b">Mr. Frank's Class B</option>
@@ -119,7 +124,7 @@
               <option value="anderson class c">Mr. Anderson's Class C</option>
             </select>
           </div>
-          <div>
+          <div class="box2-student">
             <span></span>
             <span></span>
           </div>
@@ -136,19 +141,19 @@
       <div class="card">
         <div class="box1"><img src="images/imageMask.svg" alt="" /></div>
         <div class="box2">
-          <div>
+          <div class="box2-title">
             <h2>
               Introduction to Biology: Micro organisms and how they affec...
             </h2>
-            <img src="icons/favourite.svg" alt="" />
+            <img id="icon-favourite" src="icons/favourite.svg" alt="" />
           </div>
-          <div>
+          <div class="box2-subject">
             <span>Biology</span>
             <span>|</span>
             <span>Grade 4</span>
             <span>+1</span>
           </div>
-          <div>
+          <div class="box2-detail">
             <span>5</span>
             <span>Units</span>
             <span>16</span>
@@ -156,7 +161,7 @@
             <span>22</span>
             <span>Topics</span>
           </div>
-          <div>
+          <div class="box2-teacher">
             <select name="class" id="class">
               <option value="all classes">All Classes</option>
               <option value="frank class b">Mr. Frank's Class B</option>
@@ -164,7 +169,7 @@
               <option value="anderson class c">Mr. Anderson's Class C</option>
             </select>
           </div>
-          <div>
+          <div class="box2-student">
             <span>300 Students</span>
             <span></span>
           </div>
@@ -181,16 +186,16 @@
       <div class="card">
         <div class="box1"><img src="images/imageMask-3.svg" alt="" /></div>
         <div class="box2">
-          <div>
+          <div class="box2-title">
             <h2>Introduction to High School Mathematics</h2>
           </div>
-          <div>
+          <div class="box2-subject">
             <span>Mathematics</span>
             <span>|</span>
             <span>Grade 8</span>
             <span>+3</span>
           </div>
-          <div>
+          <div class="box2-detail">
             <span></span>
             <span></span>
             <span></span>
@@ -198,14 +203,14 @@
             <span></span>
             <span></span>
           </div>
-          <div>
+          <div class="box2-teacher">
             <select name="class" id="class">
               <option value="frank class a">Mr. Frank's Class A</option>
               <option value="frank class c">Mr. Frank's Class C</option>
               <option value="anderson class c">Mr. Anderson's Class C</option>
             </select>
           </div>
-          <div>
+          <div class="box2-student">
             <span>44 Students</span>
             <span>14-Oct-2019 - 20-Oct-2020</span>
           </div>
@@ -221,12 +226,12 @@
 
     <!-- Footer -->
     <div class="footer">
-      <div>
+      <div class="footer1">
         <a href="#">About</a>
         <span>|</span>
         <a href="#">Contact Us</a>
       </div>
-      <div>
+      <div class="footer2">
         <img src="icons/logo used in footer.svg" alt="logo footer" />
         <span>|</span>
         <span>Copyright &copy; 2020-2021</span>

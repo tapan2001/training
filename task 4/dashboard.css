@@ -4,7 +4,9 @@
 }
 * {
   margin: 0;
+  font-size: 1rem;
   font-family: Quicksand;
+  font-weight: 600;
   background-color: #eeeeee;
 }
 
@@ -12,129 +14,141 @@
 .header {
   background-image: url("header pattern svg.svg");
   width: 100%;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   display: flex;
   align-items: center;
 }
-.header img:last-child {
-  display: none;
-}
 .header * {
-  margin-right: 32px;
+  margin-right: 3em;
   background-color: rgba(0, 0, 0, 0);
 }
-.header img:nth-of-type(1) {
-  margin: 10.5px auto 9.5px 24px;
+.header #logo-header {
+  margin: 0.8em auto 0.7em 2em;
 }
-.header img:nth-of-type(4) {
-  margin-right: 24px;
+.header #acc-circle {
+  margin-right: 2em;
+}
+.header #hamburger-menu {
+  display: none;
 }
 .header a {
-  font-size: 14px;
-  text-decoration-line: none;
+  font-size: 1rem;
+  font-family: Quicksand;
+  font-weight: 600;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
   color: #3fd28b;
   font-weight: bold;
 }
 
 /* Selection Bar */
 .bar {
-  height: 64px;
-  margin: 24px 24px auto 24px;
+  height: 5em;
+  margin: 2em 2em auto 2em;
   display: flex;
   align-items: center;
   background-color: #8ddc97;
 }
-.bar div {
+.bar .bar-box {
   background-color: inherit;
   width: 100%;
 }
-.bar > div:nth-of-type(1) {
-  height: 92%;
-  border-bottom: 4px solid #222222;
-}
-.bar div div {
+.bar .bar-box .bar-section {
+  font-size: 1.2rem;
+  font-family: Quicksand;
+  font-weight: 600;
+  color: #222222;
+  width: -webkit-min-content;
+  width: -moz-min-content;
   width: min-content;
   display: flex;
   align-items: center;
   margin: auto;
+  background-color: inherit;
 }
-.bar div div:nth-of-type(1) {
+.bar .bar-box .bar-section:nth-of-type(1) {
   height: 92%;
 }
-.bar div img:nth-of-type(1) {
+.bar .bar-box #course-icon {
   background-color: inherit;
-
-  margin-right: 8px;
+  margin-right: 0.8em;
 }
-.bar div img:nth-of-type(2) {
+.bar .bar-box #class-icon {
   background-color: inherit;
-  margin-left: 413px;
-  margin-right: 16px;
+  margin-left: 3.5em;
+  margin-right: 1.5em;
 }
-.bar div span,
-.bar div div {
+.bar .bar-box .bar-txt {
   background-color: inherit;
-  font-size: 16px;
-  color: #222222;
+  font-size: 1.5rem;
+  font-family: Quicksand;
   font-weight: 600;
+  color: #222222;
 }
-.bar div span:nth-of-type(2n + 1) {
-  font-size: 24px;
+.bar .bar-box .bar-txt:nth-of-type(2n + 1) {
+  font-size: 2rem;
   font-weight: bold;
-  margin-right: 5px;
+  margin-right: 0.2em;
+}
+.bar .bar-box:nth-of-type(1) {
+  height: 92%;
+  border-bottom: 4px solid #222222;
 }
 
 /* Info bar */
 .info-bar {
-  height: 45px;
-  margin: 80px 24px auto 24px;
+  height: 4em;
+  margin: 6.5em 2em auto 2em;
   display: flex;
   align-items: center;
-  margin-top: 24px;
-  margin-bottom: 20px;
+  margin-top: 2em;
+  margin-bottom: 1.5em;
   border-bottom: rgba(0, 0, 0, 0.12) solid 1px;
 }
 .info-bar span,
 .info-bar label {
-  font-size: 12px;
-  color: #686868;
+  font-size: 1rem;
+  font-family: Quicksand;
   font-weight: 600;
+  color: #686868;
   margin-right: auto;
 }
 .info-bar label {
-  margin-right: 6px;
+  margin-right: 0.5em;
 }
 .info-bar select {
-  font-size: 16px;
-  height: 25px;
-  width: 156px;
-  color: #333333;
+  font-size: 1.2rem;
+  font-family: Quicksand;
   font-weight: 600;
+  height: 1.2em;
+  width: 10em;
+  color: #333333;
   border: none;
   border-bottom: rgba(0, 0, 0, 0.12) solid 1px;
 }
 .info-bar img {
-  margin-left: 24px;
+  margin-left: 2em;
 }
 
 /* card */
 .card-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 1.5em;
   width: 92%;
   margin: auto;
-  margin-bottom: 50px;
+  margin-bottom: 4em;
 }
+
 .card {
   background-color: #ffffff;
   display: grid;
   grid-template-columns: repeat(18, 1fr);
-  padding-top: 24px;
+  padding-top: 2em;
 }
-
-.box1 {
+.card .box1 {
   background-color: inherit;
   grid-column: 1/8;
   width: 100%;
@@ -142,90 +156,93 @@
   justify-content: center;
   align-items: center;
 }
-
-.box2 {
+.card .box1 img {
+  width: 80%;
+}
+.card .box2 {
   background-color: inherit;
   grid-column: 8/19;
 }
-.box2 * {
+.card .box2 * {
   margin-bottom: 2px;
 }
-.box2 h2 {
+.card .box2 h2 {
   background-color: inherit;
-  font-size: 16px;
+  font-size: 1.5rem;
   color: #222222;
 }
-.box2 div,
-.box2 span,
-.box2 select {
+.card .box2 div,
+.card .box2 span,
+.card .box2 select {
   background-color: inherit;
 }
-.box2 div:nth-child(1) {
+.card .box2 .box2-title {
   display: flex;
   align-items: center;
 }
-.box2 div:nth-of-type(1) h2 {
+.card .box2 .box2-title h2 {
+  width: 80%;
   background-color: inherit;
-  font-size: 16px;
+  font-size: 1.2rem;
   color: #222222;
   margin-right: auto;
 }
-.box2 div:nth-of-type(1) img {
-  margin-right: 8px;
+.card .box2 .box2-title #icon-favourite {
+  width: 2em;
+  margin-right: 0.5em;
   background-color: inherit;
 }
-.box2 div:nth-of-type(2) span {
-  font-size: 12px;
-  color: #666666;
+.card .box2 .box2-subject span {
+  font-family: Quicksand;
   font-weight: 600;
+  color: #666666;
 }
-.box2 div:nth-of-type(2) span:last-child {
+.card .box2 .box2-subject span:last-child {
   color: #1f7a54;
 }
-.box2 div:nth-of-type(3) span {
-  font-size: 12px;
-  color: #666666;
+.card .box2 .box2-detail span {
+  font-family: Quicksand;
   font-weight: 600;
+  color: #666666;
 }
-.box2 div:nth-of-type(3) span:nth-of-type(2n + 1) {
+.card .box2 .box2-detail span:nth-of-type(2n + 1) {
   font-weight: bold;
   color: #222222;
 }
-.box2 div:nth-of-type(4) select {
-  font-size: 16px;
-  color: #222222;
+.card .box2 .box2-teacher select {
+  font-size: 1.2rem;
+  font-family: Quicksand;
   font-weight: 600;
+  color: #222222;
   border: none;
   border-bottom: rgba(0, 0, 0, 0.38) solid 1px;
-  margin-top: 16px;
-  margin-bottom: 4px;
+  margin-top: 1em;
+  margin-bottom: 0.2em;
 }
-.box2 div:nth-of-type(5) {
-  font-size: 12px;
-  color: #666666;
+.card .box2 .box2-student {
+  font-family: Quicksand;
   font-weight: 600;
+  color: #666666;
 }
-
-.box3 {
+.card .box3 {
   background-color: inherit;
   grid-column: 1/-1;
-  padding-bottom: 12px;
+  padding-bottom: 0.8em;
 }
-
-.card-icons {
-  height: 40px;
+.card .card-icons {
+  height: 4.5em;
   width: 80%;
   display: flex;
   justify-content: space-around;
-  margin-top: 16px;
+  margin-top: 1.5em;
 }
-.card-icons::before {
+.card .card-icons::before {
   border-top: rgba(0, 0, 0, 0.12) 1px solid;
 }
-.card-icons img {
+.card .card-icons img {
   background-color: inherit;
-  width: 25px;
-  height: 18 px;
+  width: 1.8em;
+  height: 1.8em;
 }
 
 /* footer */
@@ -234,40 +251,48 @@
   flex-direction: column;
   width: 100%;
 }
-.footer div:nth-of-type(1) {
+.footer .footer1 {
   align-self: center;
-  font-size: 14px;
+  font-size: 1.2rem;
+  font-family: Quicksand;
   font-weight: 600;
   color: #1f7a54;
   display: flex;
-  margin-bottom: 16px;
+  margin-bottom: 1em;
 }
-.footer div:nth-of-type(1) a {
+.footer .footer1 a {
   color: #1f7a54;
-  text-decoration-line: none;
-  margin: 0 5px;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  margin: 0 0.3em;
 }
-.footer div:nth-of-type(2) {
+.footer .footer2 {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #e0e1e1;
 }
-.footer div:nth-of-type(2) * {
+.footer .footer2 * {
   background-color: inherit;
-  margin: 15px 5px;
-  font-size: 12px;
+  margin: 1.2em 0.5em;
+  font-size: 1rem;
   color: #616161;
 }
-.footer div:nth-of-type(2) span:nth-of-type(3) {
+.footer .footer2 span:nth-of-type(3) {
   font-weight: bold;
 }
 
+/* Responsive */
+@media (min-width: 1920px) {
+  html {
+    font-size: 24px;
+  }
+}
 @media (max-width: 768px) {
   .header a {
     display: none;
   }
-  .header img:last-child {
+  .header #hamburger-menu {
     display: block;
   }
   .card-container {
@@ -276,3 +301,17 @@
     width: 80%;
   }
 }
+@media (max-width: 550px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 6px;
+  }
+  #course-icon,
+#class-icon {
+    height: 3.5em;
+  }
+}/*# sourceMappingURL=dashboard.css.map */
